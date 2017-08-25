@@ -1,0 +1,9 @@
+{
+  "MailSettings": {
+    "ToAddress": "asdsad.com"
+
+  },
+  "ConnectionStrings": {
+    "WorldContextConnection": "Server=(localdb)\\MSSQLLocalDb;Database=TheWorld;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  }
+}

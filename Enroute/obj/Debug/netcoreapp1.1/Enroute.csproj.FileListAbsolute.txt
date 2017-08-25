@@ -1,0 +1,10 @@
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\bin\Debug\netcoreapp1.1\Enroute.deps.json
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\bin\Debug\netcoreapp1.1\Enroute.runtimeconfig.json
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\bin\Debug\netcoreapp1.1\Enroute.runtimeconfig.dev.json
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\bin\Debug\netcoreapp1.1\Enroute.dll
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\bin\Debug\netcoreapp1.1\Enroute.pdb
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\obj\Debug\netcoreapp1.1\Enroute.AssemblyInfo.cs
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\obj\Debug\netcoreapp1.1\Enroute.dll
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\obj\Debug\netcoreapp1.1\Enroute.pdb
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\obj\Debug\netcoreapp1.1\Enroute.csproj.CoreCompileInputs.cache
+C:\Users\HGhanta\Source\Repos\Enroute\Enroute\obj\Debug\netcoreapp1.1\Enroute.csprojResolveAssemblyReference.cache

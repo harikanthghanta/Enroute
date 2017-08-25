@@ -1,0 +1,76 @@
+﻿@{ 
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> The World - @ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link  rel="stylesheet" href="~/lib/bootswatch/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div id="sidebar">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <img src="~/img/head-659652_960_720.png" alt="headshot" />
+            <span>hk </span>
+        }
+        
+        <ul class="nav">
+            <li class="active"><a asp-controller="App" asp-action="Index">Home</a></li>
+            <li><a asp-controller="App" asp-action="about">About</a></li>
+            <li><a asp-controller="App" asp-action="contact">Contact</a></li>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li><a asp-controller="app" asp-action="trips">Trips</a></li>
+            <li><a asp-controller="Auth" asp-action="Logout">Logout</a></li>
+        }
+        </ul>
+    </div>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <button id="sidebarToggle" class="btn btn-primary btn-sm">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </button>
+                    </li>
+                </ul>
+                <a asp-controller="App" asp-action="Index" class="navbar-brand">The World</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" class="btn btn-sm btn-info">
+                            <i class="glyphicon glyphicon-save"></i> Save
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-sm btn-info">
+                            <i class="glyphicon glyphicon-print"></i> Print
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="main" class="container-fluid">
+
+            @RenderBody()
+        </div>
+
+        <div id="footer" class="container-fluid ">
+            <div class="nav navbar-default navbar-fixed-bottom">
+                <p class="text-center text-info ">&copy; 2017 Hk Ltd.</p>
+            </div>
+         </div>
+    </div>
+
+    <script type="text/javascript" src="~/lib/jQuery/dist/jquery.min.js"> </script>
+    @RenderSection("scripts", false);
+    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="~/site.js"> </script>
+</body>
+</html>
